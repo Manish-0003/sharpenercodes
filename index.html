@@ -32,14 +32,14 @@
 
   <script>
     // Change font color to green for the second item using querySelectorAll //
-    var secondItem = document.querySelectorAll('#items li:nth-child(2)');
-    secondItem.forEach(function(item) {
+    var header = document.querySelectorAll('#items li:nth-child(2)');
+    header.forEach(function(item) {
       item.style.color = 'green';
     });
 
     // Select all odd items and make their background green using querySelectorAll //
-    var oddItems = document.querySelectorAll('#items li:nth-child(odd)');
-    oddItems.forEach(function(item) {
+    var header = document.querySelectorAll('#items li:nth-child(odd)');
+    header.forEach(function(item) {
       item.style.backgroundColor = 'green';
     });
   </script>
