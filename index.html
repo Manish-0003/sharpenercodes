@@ -31,17 +31,13 @@
   </div>
 
   <script>
-    // Change font color to green for the second item using querySelectorAll //
-    var header = document.querySelectorAll('#items li:nth-child(2)');
-    header.forEach(function(item) {
-      item.style.color = 'green';
-    });
+    // Adding "Hello" before "Item Lister"
+    const headerTitle = document.getElementById('header-title');
+    headerTitle.textContent = 'Hello ' + headerTitle.textContent;
 
-    // Select all odd items and make their background green using querySelectorAll //
-    var header = document.querySelectorAll('#items li:nth-child(odd)');
-    header.forEach(function(item) {
-      item.style.backgroundColor = 'green';
-    });
+    // Adding "Hello" before "Item 1"
+    const item1 = document.getElementById('items').firstElementChild;
+    item1.textContent = 'Hello ' + item1.textContent;
   </script>
 </body>
 </html>
